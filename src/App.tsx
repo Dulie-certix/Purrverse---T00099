@@ -1,8 +1,11 @@
+import React from "react";
+import Hero from "./pages/pageA/sections/Hero";
+
 function App() {
   return (
-    <>
-      <h1 className="text-primary text-3xl">hello world</h1>
-    </>
+    <div className="max-w-[1920px] min-w-[320px] mx-auto">
+      <Hero />
+    </div>
   );
 }
 
