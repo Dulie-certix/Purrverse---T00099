@@ -1,7 +1,8 @@
 import React from "react";
-import HeroLogo from "../../../components/HeroLogo";
-import heroBg from "../../../assets/Hero/heroBG.mp4"
-import EngelCat from "../../../assets/Hero/Engel Cat.png"
+import HeroLogo from "../../../components/Hero/Hero Logo";
+import heroBG from "../../../assets/Hero/heroBG.mp4";
+import EngelCat from "../../../assets/Hero/Engel Cat.png";
+import Logo1 from "../../../assets/Hero/Logo1.png";
 
 
 
@@ -14,16 +15,16 @@ export default function Hero() {
         muted 
         loop
       >
-        <source src={heroBg} type="video/mp4" />
+        <source src={heroBG} type="video/mp4" />
       </video>
       <div className="relative z-10 max-w-[1920px] max-h-[1181px] h-screen flex flex-col justify-top items-center  mx-[20px]">
         <img src={EngelCat} alt="Enge Cat" className="max-w-[513px] max-h-[536px] mt-[100px]"/>
 
         <HeroLogo 
-          logo={require("../../../assets/Logos/Logo1.png")} 
+          logo={Logo1} 
           title="Logo 1"
-          mleft="ml-[-200px]"
-          mtop="mt-[20px]"
+          mleft={10}
+          mtop={-600}
           />
       
         
