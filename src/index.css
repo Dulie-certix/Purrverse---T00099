@@ -217,7 +217,11 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gray-900
+    text-foreground 
+    max-w-[1920px] 
+    mx-auto
+    px-[0px];
   }
 
   /* Typography base styles */
@@ -249,3 +253,5 @@
     @apply outline-ring outline-2 outline-offset-2;
   }
 }
+
+

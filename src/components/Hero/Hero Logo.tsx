@@ -1,20 +1,12 @@
-export default function HeroLogo({ logo, title, mleft, mtop  }: {
-    logo?: string;
-    title?: string;
-    mleft?: number;
-    mtop?: number;
-  }) {
+import { ReactNode } from 'react';
+import Shadow from '../Shadow';
+
+export default function HeroLogo({ children }: { children: ReactNode }) {
     return (
-        <div>
-      <div style={{
-        marginLeft: mleft ? `${mleft}px` : '0px',
-        marginTop: mtop ? `${mtop}px` : '0px',
-      }}>
+      <div className="w-[64px] h-[64px] rounded-[7.68px] flex justify-center items-center bg-white">
+          <Shadow size={0} color="#FFEDDF" blur={129.67}>
+              {children}
+      </Shadow>
       </div>
-        <img 
-          src={logo} 
-          alt={title} 
-          className="w-[64px] h-[64px]"
-        /></div>
     );
   }

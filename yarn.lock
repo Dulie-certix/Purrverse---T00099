@@ -3121,12 +3121,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.513.0":
-  version: 0.513.0
-  resolution: "lucide-react@npm:0.513.0"
+"lucide-react@npm:^0.553.0":
+  version: 0.553.0
+  resolution: "lucide-react@npm:0.553.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/1e1cd19afe9478ac18f545d561a8681ab0f0f8421328060869634a76c80ff1dac5abd6704da015eef5a1ee7a0a02d478c1dcbe141e1967bbcd2d1c48212110fb
+  checksum: 10c0/b1283f1a2302a50d6a16bd67b9f7417ae08a74cba59ae5ca9953527cb9724247df12ba8c72ca2fc6a70b745f8315cc709ac7573643c4088728766da151999ef6
   languageName: node
   linkType: hard
 
@@ -3688,6 +3688,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-icons@npm:^5.5.0":
+  version: 5.5.0
+  resolution: "react-icons@npm:5.5.0"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/a24309bfc993c19cbcbfc928157e53a137851822779977b9588f6dd41ffc4d11ebc98b447f4039b0d309a858f0a42980f6bfb4477fb19f9f2d1bc2e190fcf79c
+  languageName: node
+  linkType: hard
+
 "react-refresh@npm:^0.14.2":
   version: 0.14.2
   resolution: "react-refresh@npm:0.14.2"
@@ -3737,11 +3746,12 @@ __metadata:
     globals: "npm:^15.15.0"
     husky: "npm:^8.0.0"
     lint-staged: "npm:^15.5.0"
-    lucide-react: "npm:^0.513.0"
+    lucide-react: "npm:^0.553.0"
     prettier: "npm:^3.5.3"
     prettier-plugin-tailwindcss: "npm:^0.6.11"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
+    react-icons: "npm:^5.5.0"
     react-router: "npm:^7.4.1"
     tailwind-merge: "npm:^3.3.0"
     tailwindcss: "npm:^4.1.1"
