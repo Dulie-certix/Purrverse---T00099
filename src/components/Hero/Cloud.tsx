@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+
 import CloudImg from "../../assets/Hero/Cloud.png";
 
 interface CloudProps {

@@ -8,20 +8,24 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
 import Ring from "../../../assets/Hero/Engel Ring.png";
 import Cloud from "../../../components/Hero/Cloud";
+import Mask from "../../../components/FadeMask";
 
 
 export default function Hero() {
   return (
-      <section id="Hero" className="w-full h-full min-h-screen flex items-center justify-center relative">
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        autoPlay
-        muted
-        loop
-      >
-        <source src={heroBG} type="video/mp4" />
-      </video>
-      <div className="relative z-10 max-w-[1920px] min-h-[1181px]  flex flex-col justify-top items-center mx-[20px]">
+      <section id="Hero" className="w-full h-full min-h-screen w-full flex items-center justify-center relative">
+      <Mask>
+        <video
+          className="w-full h-full object-cover mix-blend-screen"
+          autoPlay
+          muted
+          loop
+        >
+          <source src={heroBG} type="video/mp4" />
+        </video>
+      </Mask>
+
+      <div className="relative z-20 max-w-[1920px] min-h-[1181px]  flex flex-col justify-top items-center mx-[20px]">
 
         {/* Cat  */}
         <div  className="max-w-[783px] max-h-[836px] mt-[100px]" >
