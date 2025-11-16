@@ -8,24 +8,23 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
 import Ring from "../../../assets/Hero/Engel Ring.png";
 import Cloud from "../../../components/Hero/Cloud";
-import Mask from "../../../components/FadeMask";
+
 
 
 export default function Hero() {
   return (
-      <section id="Hero" className="w-full h-full min-h-screen w-full flex items-center justify-center relative">
-      <Mask>
+      <section id="Hero" className="w-full h-full min-w-screen flex items-center justify-center relative">
+      
         <video
-          className="w-full h-full object-cover mix-blend-screen"
+          className="w-full h-full absolute object-cover"
           autoPlay
           muted
           loop
         >
           <source src={heroBG} type="video/mp4" />
         </video>
-      </Mask>
-
-      <div className="relative z-20 max-w-[1920px] min-h-[1181px]  flex flex-col justify-top items-center mx-[20px]">
+     
+      <div className="relative z-20 max-w-[1920px] max-h-[1080px] min-h-[1181px] flex flex-col justify-top items-center">
 
         {/* Cat  */}
         <div  className="max-w-[783px] max-h-[836px] mt-[100px]" >
@@ -54,7 +53,8 @@ export default function Hero() {
 
         {/* Ring */}
         <div >
-          <img src={Ring} alt="Ring" className="w-[350px] h-auto mt-[-555px]  ml-[40px]"/>         
+       
+   <img src={Ring} alt="Ring" className="w-[350px] h-auto mt-[-555px]  ml-[40px]"/>         
         </div>
 
       {/* cloud set */}
