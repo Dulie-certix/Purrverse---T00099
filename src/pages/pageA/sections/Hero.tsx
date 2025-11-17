@@ -7,7 +7,7 @@ import Logo4 from "../../../assets/Hero/Logo4.png";
 import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
 import Ring from "../../../assets/Hero/Engel Ring.png";
-import Cloud from "../../../components/Hero/Cloud";
+import Cloud from "../../../components/Cloud";
 
 
 

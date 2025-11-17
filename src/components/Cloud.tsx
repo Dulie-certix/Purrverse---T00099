@@ -1,5 +1,5 @@
 
-import CloudImg from "../../assets/Hero/Cloud.png";
+import CloudImg from "../assets/cloud.png"
 
 interface CloudProps {
   width?: string;

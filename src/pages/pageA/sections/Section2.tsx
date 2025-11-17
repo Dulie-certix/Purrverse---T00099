@@ -1,20 +1,20 @@
 import Section2BG from "../../../assets/Section 02/Section 02 BG.gif";
 import PlaneCat from "../../../assets/Section 02/plane cat.png";
-import TopFadeMask from "../../../components/TopFadeMask";
 import Stone from "../../../components/Section 02/Stone";
-
+import TopFadeMask from "../../../components/TopFadeMask";
 export default function Hero() {
   return (
       <section id="Section2" className="w-full h-full mt-[-68px] min-h-screen flex items-center justify-center relative">
 
             {/* background */}
             
-                    <img src={Section2BG} alt="Section 2 Background" className="w-full h-full absolute object-cover" />
+                    <TopFadeMask position="bottom">
+                      <img src={Section2BG} alt="Section 2 Background" className="w-full h-full absolute object-cover" />
+                    </TopFadeMask>
            
                     
         <div className="relative z-20 w-[1920px] h-[1080px]">
-          <div className="w-[1748px] h-[812px] mt-[183px] ml-[119px] mb-[85px] mr-[51px]">
-
+          <div className="w-[1748px] h-[812px] mt-[183px] ml-[119px] mb-[15px] mr-[51px]">
             <img 
               src={PlaneCat} 
               alt="Plane Cat" 
