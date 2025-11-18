@@ -5,10 +5,10 @@ import ShieldCat from "../../../assets/Section 03/shield Cat.png"
 
 export default function Section3() {
   return (
-    <section id="Section3" className="w-full h-full min-w-screen flex items-center justify-center relative ">
+    <section id="Section3" className="w-full h-full min-h-screen min-w-screen flex items-center justify-center relative ">
         
         {/* Background*/}
-        <div className=" max-w-[1920px] max-h-[991px] mb-[63px] w-full h-full flex flex-col justify-center items-center relative">
+        <div className=" max-w-[1920px] max-h-[991px] w-full h-full flex flex-col justify-center items-center relative">
           <div>
             <Cloud className="absolute z-0 w-[473.38px] h-[290px] mt-[182px] left-[258.81px] opacity-70" />
             <Cloud className="absolute z-0 w-[414.62px] h-[254px] top-[737px] left-[1040.19px] opacity-70" />
@@ -16,7 +16,7 @@ export default function Section3() {
           </div>
             
             {/* Content */}
-          <div className="w-[1684px] h-[506px] ml-[119px] mt-[225px] relative z-20">
+          <div className="w-[1684px] h-[506px] ml-[119px] mt-[225px] mb-[260px] relative z-20">
 
               {/* Image */}
               <img src={ShieldCat} alt="Shield Cat" className="absolute left-[651px] top-[127px] w-[379px] h-[379px] object-contain z-10" />
