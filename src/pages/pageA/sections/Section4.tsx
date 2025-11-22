@@ -12,7 +12,7 @@ export default function Section4() {
       {/* Background*/}
       <div className="relative flex h-full max-h-[1078px] w-full max-w-[1920px] flex-col justify-center">
         <div>
-          <Cloud className="absolute left-[1440px] h-[340px] w-[555px] overflow-hidden" />
+          <Cloud className="absolute left-[1440px] hidden h-[340px] w-[555px]" />
           <Cloud className="absolute top-[423px] left-[-50px] z-10 h-[325px] w-[447px]" />
           <Cloud className="absolute top-[659px] left-[659.9px] z-10 h-[198px] w-[323.2px]" />
         </div>
@@ -35,17 +35,17 @@ export default function Section4() {
             </p>
           </div>
           {/* Image */}
-          <TopFadeMask className="relative">
+          <TopFadeMask className="z=0 relative">
             <img
               src={Hill}
               alt="Hill"
-              className="mt-[308px] h-[1076px] w-full"
+              className="mt-[278px] h-[1076px] w-full"
             />
           </TopFadeMask>
           <img
             src={JetCat}
             alt="Jet Cat"
-            className="mt-[-1065px] absolute ml-[1658px] h-[364px] w-[263px]"
+            className="absolute mt-[-1065px] ml-[1658px] h-[364px] w-[263px]"
           />
         </div>
       </div>
