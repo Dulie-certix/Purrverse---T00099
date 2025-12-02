@@ -10,11 +10,11 @@ import Nav from "./pages/pageA/sections/Nav";
 function App() {
   return (
     <div className="w-full overflow-x-hidden">
-      <div className="mx-auto w-full 3xl:max-w-[1920px]">
+      <div className="w-full">
         <div className="bg-[linear-gradient(180deg,_#001821_0%,_#001821_41.06%,_#86CDEA_65.08%,_#86CDEA_89.42%,_#86CDEA_100%)]">
           <Hero />
-          {/* <Section1 />
-          <Section2 />
+          <Section1 />
+          {/* <Section2 />
           <Section3 />
           <About />
           <Section5 />

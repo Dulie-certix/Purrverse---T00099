@@ -13,9 +13,9 @@ export default function Hero() {
   return (
     <section
       id="Hero"
-      className="relative flex h-full w-full min-w-screen items-center justify-center"
+      className="relative flex h-screen w-screen items-center justify-center overflow-hidden"
     >
-      <TopFadeMask position="bottom">
+      <TopFadeMask position="bottom" className="w-screen">
         <video
           className="absolute h-full w-full object-cover"
           autoPlay
@@ -25,6 +25,7 @@ export default function Hero() {
           <source src={heroBG} type="video/mp4" />
         </video>
       </TopFadeMask>
+     
 
       <div className="justify-top 3xl:min-h-[1181px] relative z-20 flex max-h-[1080px] min-h-[600px] max-w-[1920px] flex-col items-center sm:min-h-[800px] md:min-h-[900px] lg:min-h-[1000px] xl:min-h-[1100px]">
         {/* Cat  */}
@@ -37,7 +38,7 @@ export default function Hero() {
         </div>
 
         {/* logo set */}
-        <div className="3xl:mt-[-525px] 3xl:h-[248px] 3xl:max-w-[1000px] mt-[-250px] flex h-[120px] w-full max-w-[280px] flex-col justify-between sm:mt-[-300px] sm:h-[150px] sm:max-w-[600px] md:mt-[-390px] md:h-[180px] md:max-w-[600px] lg:mt-[-400px] lg:h-[200px] lg:max-w-[800px] xl:mt-[-450px] xl:h-[220px] xl:max-w-[900px] w-[280px] ">
+        <div className="3xl:mt-[-525px] 3xl:h-[248px] 3xl:max-w-[1000px] mt-[-250px] flex h-[120px] w-[280px] w-full max-w-[280px] flex-col justify-between sm:mt-[-300px] sm:h-[150px] sm:max-w-[600px] md:mt-[-390px] md:h-[180px] md:max-w-[600px] lg:mt-[-400px] lg:h-[200px] lg:max-w-[800px] xl:mt-[-450px] xl:h-[220px] xl:max-w-[900px]">
           <div className="flex items-start justify-between">
             <HeroLogo>
               <img
@@ -74,9 +75,9 @@ export default function Hero() {
         </div>
 
         {/* cloud set */}
-        <div className="justify-left lg:mx-auto 3xl:h-[375px] 3xl:max-w-[1252px] z-[-10] mt-[-520px] h-[100px] w-full max-w-[650px] sm:h-[250px] sm:max-w-[800px] md:h-[250px] md:max-w-[750px] lg:mt-[-575px] lg:h-[320px] lg:max-w-[1050px] xl:mt-[-610px] xl:h-[350px] xl:max-w-[1150px]">
+        <div className="justify-left 3xl:h-[375px] 3xl:max-w-[1252px] z-[-10] mt-[-520px] h-[100px] w-full max-w-[650px] sm:h-[250px] sm:max-w-[800px] md:h-[250px] md:max-w-[750px] lg:mx-auto lg:mt-[-575px] lg:h-[320px] lg:max-w-[1050px] xl:mt-[-610px] xl:h-[350px] xl:max-w-[1150px]">
           <Cloud className="3xl:mt-[700px] 3xl:ml-[370px] 3xl:h-[340px] 3xl:w-[555px] mt-[570px] ml-[20px] h-[100px] w-[150px] sm:mt-[550px] sm:ml-[150px] sm:h-[220px] sm:w-[280px] md:mt-[585px] md:ml-[180px] md:h-[230px] md:w-[300px] lg:mt-[600px] lg:ml-[220px] lg:h-[300px] lg:w-[420px] xl:mt-[650px] xl:ml-[280px] xl:h-[320px] xl:w-[480px]" />
-          <Cloud className="3xl:mt-[-375px] 3xl:h-[340px] 3xl:w-[555px] mt-[-100px] ml-[120px] h-[100px] w-[150px] sm:mt-[-200px] sm:h-[220px] sm:w-[280px] sm:ml-[0px] md:mt-[-250px] md:h-[230px] md:w-[300px] lg:mt-[-320px] lg:h-[300px] lg:w-[420px] xl:mt-[-350px] xl:h-[320px] xl:w-[480px]" />
+          <Cloud className="3xl:mt-[-375px] 3xl:h-[340px] 3xl:w-[555px] mt-[-100px] ml-[120px] h-[100px] w-[150px] sm:mt-[-200px] sm:ml-[0px] sm:h-[220px] sm:w-[280px] md:mt-[-250px] md:h-[230px] md:w-[300px] lg:mt-[-320px] lg:h-[300px] lg:w-[420px] xl:mt-[-350px] xl:h-[320px] xl:w-[480px]" />
           <Cloud className="3xl:mt-[-300px] 3xl:ml-[700px] 3xl:h-[340px] 3xl:w-[555px] mt-[-100px] ml-[180px] h-[100px] w-[120px] sm:mt-[-200px] sm:ml-[300px] sm:h-[220px] sm:w-[280px] md:mt-[-210px] md:ml-[400px] md:h-[230px] md:w-[300px] lg:mt-[-270px] lg:ml-[480px] lg:h-[300px] lg:w-[420px] xl:mt-[-270px] xl:ml-[580px] xl:h-[320px] xl:w-[480px]" />
         </div>
       </div>

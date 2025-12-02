@@ -108,14 +108,12 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   /* Screen sizes - Figma-optimized responsive breakpoints */
-  --screen-xs: 475px; /* Extra small devices */
-  --screen-sm: 640px; /* Small devices (tablets) */
-  --screen-md: 768px; /* Medium devices (small tablets/laptops) */
-  --screen-lg: 1024px; /* Large devices (laptops) */
-  --screen-xl: 1280px; /* Extra large devices (standard desktops) */
-  --breakpoint-figma: 1440px; /* Figma design breakpoint (target desktop) */
-  --screen-2xl: 1536px; /* 2X large devices */
-  --screen-3xl: 1920px; /* Ultra-wide displays */
+  --breakpoint-sm: 640px; /* Small devices (tablets) */
+  --breakpoint-md: 768px; /* Medium devices (small tablets/laptops) */
+  --breakpoint-lg: 1024px; /* Large devices (laptops) */
+  --breakpoint-xl: 1280px; /* Extra large devices (standard desktops) */
+  --breakpoint-2xl: 1536px; /* 2X large devices */
+  --breakpoint-3xl: 1920px; /* Ultra-wide displays */
 
   /* Container max-widths - Figma-aligned */
   --container-xs: 100%;

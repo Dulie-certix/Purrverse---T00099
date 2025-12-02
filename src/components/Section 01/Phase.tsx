@@ -12,8 +12,8 @@ interface Props {
 
 const Phase: React.FC<Props> = ({ text1, text, contentText, listItems, imageSrc, imageWidth }) => {
   return (
-    <div className="flex w-full max-w-[300px] flex-col justify-between rounded-3xl bg-[#FFFFFF33] p-5 shadow-[0px_0px_16px_4px_#FFFFFF40_inset] sm:max-w-[340px] md:max-w-[360px] 3xl:h-[526px] 3xl:max-w-[386px]">
-      <div className="flex flex-col gap-5">
+    <div className=" rounded-3xl bg-[#FFFFFF33] p-5 shadow-[0px_0px_16px_4px_#FFFFFF40_inset] w-[280px] sm:w-[360px] md:w-[360px] lg:w-[370px] 2xl:w-[336px] 3xl:h-[526px] 2xl:h-auto 3xl:w-[386px]">
+      <div className="w-full flex flex-col gap-5">
 
         {/* Topic  */}
         <div className="flex h-14 w-36 items-center justify-center gap-2 rounded-2xl bg-[#00000099] sm:h-16 sm:w-40 3xl:h-[69px] 3xl:w-[180px]">
@@ -28,13 +28,13 @@ const Phase: React.FC<Props> = ({ text1, text, contentText, listItems, imageSrc,
         </div>
 
         {/* Content Topic */}
-        <div className="flex flex-col gap-2 px-5">
+        <div className="flex flex-col">
           <div className="font-['Good_Pawoo'] flex items-center text-2xl font-normal uppercase leading-none tracking-normal text-[#FFFFFF] sm:text-3xl 3xl:text-[32px]">
             {contentText}
           </div>
 
           {/* Content */}
-          <div className="font-['Fredoka'] flex items-center text-sm font-semibold leading-7 tracking-normal text-white sm:text-base 3xl:text-[16px] 3xl:leading-8">
+          <div className="font-['Fredoka'] flex items-center text-sm font-semibold leading-7 tracking-normal text-white sm:text-base 3xl:text-[16px] 2xl:text-[16px] 3xl:leading-8">
             <ul className="list-inside list-disc space-y-1">
               {listItems?.map((item, index) => (
                 <li key={index} className="marker:text-[#FFFFFF]">{item}</li>

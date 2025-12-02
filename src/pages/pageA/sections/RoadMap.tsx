@@ -11,32 +11,32 @@ export default function Section1() {
   return (
     <section
       id="Section1"
-      className="relative -mt-[260px] flex h-full w-full min-w-screen items-center justify-center"
+      className="3xl:-mt-[260px] relative -mt-20 flex h-full w-screen min-w-screen items-center justify-center overflow-hidden md:-mt-40"
     >
       {/* BackGround */}
-      <TopFadeMask>
+      <TopFadeMask className="w-screen">
         <img
           src={Section1BG}
           alt="Section 1 Background"
-          className="h-full w-full object-cover"
+          className="h-full w-screen min-w-full object-cover"
         />
       </TopFadeMask>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full max-h-[1080px] w-full max-w-[1920px] flex-col items-center justify-center">
-        <div className="mx-[0px] mb-[68px] h-[1080px] w-full max-w-[1680px] md:mx-[50px] lg:mx-[100px]">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1920px] flex-col items-center justify-center">
+        <div className="3xl:px-[0px] 3xl:mb-[68px] 3xl:h-[1080px] mx-4 mb-10 w-full max-w-[1680px] md:mb-12 md:px-[0px] lg:px-[100px] xl:px-[200px] 2xl:px-[60px]">
           {/* NASA Cat */}
           <img
             src={NASACatImage}
             alt="NASA Cat"
-            className="mt-[194px] ml-[202px] h-auto w-[285px]"
+            className="3xl:w-[285px] mt-20 ml-4 h-auto w-32 sm:mt-24 sm:ml-8 sm:w-40 md:mt-32 md:ml-12 md:w-48 lg:ml-20 lg:w-56 2xl:mt-[194px] 2xl:ml-[202px]"
           />
 
-          <div className="item-center mt-[-245px] mb-[40px] flex justify-center text-center font-['Good_Pawoo'] text-[120px] leading-[210%] font-normal tracking-normal text-white uppercase">
+          <div className="-mt-16 mb-6 flex items-center justify-center text-center font-['Good_Pawoo'] text-5xl leading-[210%] font-normal tracking-normal text-white uppercase sm:-mt-20 sm:text-6xl md:-mt-32 md:mb-8 md:text-7xl lg:text-8xl 2xl:-mt-[185px] 2xl:mb-[40px] 2xl:text-[120px]">
             Roadmap
           </div>
 
-          <div className="mt-[-54px] flex h-[526px] w-full rotate-0 flex-wrap justify-center gap-[45px] opacity-100">
+          <div className="xl:flex-warp 3xl:gap-[45px] mt-0 flex w-full flex-col justify-center gap-6 sm:gap-8 sm:px-[100px] md:grid md:gap-8 lg:grid-cols-2 lg:gap-20 2xl:-mt-[54px] 2xl:flex 2xl:h-[526px] 2xl:flex-row 2xl:gap-[25px] md:px-[0px] sm:px-[150px] px-[20px]">
             {/* Phases */}
             <Phase
               text="Phase"
