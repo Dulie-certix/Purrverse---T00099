@@ -1,0 +1,102 @@
+import Section1BG from '../../../assets/Section 01/Section 01 BG.gif';
+import CatImage from '../../../assets/Section 01/cat.png';
+import SchoolCatImage from '../../../assets/Section 01/School Cat.png';
+import RoboCatImage from '../../../assets/Section 01/Robo Cat.png';
+import BlackCatImage from '../../../assets/Section 01/Black Cat.png';
+import NASACatImage from '../../../assets/Section 01/NASA Cat.png';
+import TopFadeMask from '../../../components/TopFadeMask';
+
+import Phase from '../../../components/Section 01/Phase';
+export default function Section1() {
+  return (
+    <section
+      id="Section1"
+      className="relative -mt-[260px] flex h-full w-full min-w-screen items-center justify-center"
+    >
+      {/* BackGround */}
+      <TopFadeMask>
+        <img
+          src={Section1BG}
+          alt="Section 1 Background"
+          className="h-full w-full object-cover"
+        />
+      </TopFadeMask>
+
+      {/* Content */}
+      <div className="relative z-10 flex h-full max-h-[1080px] w-full max-w-[1920px] flex-col items-center justify-center">
+        <div className="mx-[0px] mb-[68px] h-[1080px] w-full max-w-[1680px] md:mx-[50px] lg:mx-[100px]">
+          {/* NASA Cat */}
+          <img
+            src={NASACatImage}
+            alt="NASA Cat"
+            className="mt-[194px] ml-[202px] h-auto w-[285px]"
+          />
+
+          <div className="item-center mt-[-245px] mb-[40px] flex justify-center text-center font-['Good_Pawoo'] text-[120px] leading-[210%] font-normal tracking-normal text-white uppercase">
+            Roadmap
+          </div>
+
+          <div className="mt-[-54px] flex h-[526px] w-full rotate-0 flex-wrap justify-center gap-[45px] opacity-100">
+            {/* Phases */}
+            <Phase
+              text="Phase"
+              text1="1"
+              contentText="Catnap Awakening"
+              listItems={[
+                'Brand & mascot creation',
+                'Launch of official website & whitepaper',
+                'Community building: Discord, X, Telegram',
+                'Token launch: $PURR goes live',
+                'Initial airdrop campaign begins',
+              ]}
+              imageSrc={CatImage}
+              imageWidth="w-[150px]"
+            />
+            <Phase
+              text="Phase"
+              text1="2"
+              contentText="Pawprints on the Blockchain"
+              listItems={[
+                'DEX listings & liquidity pool launch',
+                'Staking system with cute NFT rewards',
+                'Release of limited-edition Cat NFTs',
+                'Launch of Cat Council DAO governance',
+                'First community proposals & voting',
+              ]}
+              imageSrc={SchoolCatImage}
+              imageWidth="w-[79px]"
+            />
+            <Phase
+              text="Phase"
+              text1="3"
+              contentText="Purrverse Expansion"
+              listItems={[
+                'Cross-chain bridging integration',
+                'Gamified missions & leaderboard',
+                'NFT marketplace beta launch',
+                'PurrMap: interactive explorer for holders',
+                'Strategic partnerships with Web3 projects',
+              ]}
+              imageSrc={RoboCatImage}
+              imageWidth="w-[150px]"
+            />
+            <Phase
+              text="Phase"
+              text1="4"
+              contentText="Cosmic Catventures"
+              listItems={[
+                'Full Purrverse metaverse experience begins',
+                'Play-to-Earn minigames go live',
+                'Mobile app for managing assets & NFTs',
+                'IRL merch + collabs',
+                'Continuous growth, updates, and surprises',
+              ]}
+              imageSrc={BlackCatImage}
+              imageWidth="w-[150px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
