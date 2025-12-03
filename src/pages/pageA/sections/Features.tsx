@@ -6,31 +6,36 @@ export default function Section3() {
   return (
     <section
       id="Section3"
-      className="relative flex min-h-screen w-full items-center justify-center py-12 sm:py-16 lg:py-20"
+      className="relative flex min-h-screen w-full items-center justify-center px-4 sm:px-6 lg:px-8"
     >
       {/* Background*/}
-      <div className="relative flex w-full max-w-7xl flex-col items-center justify-center px-4 sm:px-6 lg:px-8 3xl:max-w-[1920px]">
+      <div className="relative mt-[-100px] flex w-full max-w-[1920px] flex-col items-center justify-center sm:mt-[-200px] lg:mt-[-300px] h-auto">
         <div>
-          <Cloud className="absolute left-[10%] top-[100px] z-0 hidden h-40 w-64 opacity-70 md:block xl:h-56 xl:w-80 3xl:left-[258.81px] 3xl:top-[182px] 3xl:h-[290px] 3xl:w-[473.38px]" />
-          <Cloud className="absolute right-[10%] top-[500px] z-0 hidden h-36 w-60 opacity-70 lg:block 3xl:left-[1040.19px] 3xl:top-[737px] 3xl:h-[254px] 3xl:w-[414.62px]" />
-          <Cloud className="absolute bottom-0 left-[5%] z-0 hidden h-48 w-80 opacity-70 md:block 3xl:left-[156px] 3xl:top-[928px] 3xl:h-[340px] 3xl:w-[555px]" />
+          {/* 1 */}
+          <Cloud className="3xl:top-[0px] 3xl:left-[258.81px] absolute left-[-100px] z-0 ml-[130px] opacity-70 h-[130px] w-[190px] top-[400px] md:top-[500px] md:left-[-100px] md:h-[200px] md:w-[300px] lg:top-[50px] lg:left-[-100px] lg:h-[240px] lg:w-[373.38px] xl:top-[50px] xl:left-[-50px] 2xl:top-[-30px] 2xl:left-[08.81px] 2xl:ml-[0px] 2xl:h-[290px] 2xl:w-[473.38px] sm:h-[200px] sm:w-[300px]" />
+
+          {/* 2 */}
+          <Cloud className="3xl:left-[1040.19px] 3xl:top-[537px] absolute z-0 opacity-70 md:top-[800px] md:left-[400px] md:h-[150px] md:w-[250px] lg:top-[450px] lg:left-[500px] lg:h-[200px] lg:w-[303.38px] xl:top-[437px] xl:left-[740.19px] xl:h-[220px] xl:w-[350.38px] 2xl:left-[840.19px] 2xl:h-[254px] 2xl:w-[414.62px] h-[130px] w-[190px] top-[650px] left-[100px]" />
+
+          {/* 3 */}
+          <Cloud className="3xl:left-[156px] absolute left-[0px] z-0 opacity-70 sm:top-[1000px] sm:left-[00px] sm:h-[200px] sm:w-[300px] lg:top-[650px] lg:left-[0px] lg:h-[260px] lg:w-[423.38px] xl:left-[56px] 2xl:top-[728px] 2xl:left-[156px] 2xl:h-[340px] 2xl:w-[555px] h-[130px] w-[190px] top-[900px]" />
         </div>
 
         {/* Content */}
-        <div className="relative z-20 w-full max-w-6xl 3xl:max-w-[1684px]">
+        <div className="relative z-20 w-full max-w-[1684px]">
           {/* Image */}
           <img
             src={ShieldCat}
             alt="Shield Cat"
-            className="absolute left-1/2 top-20 z-10 hidden h-48 w-48 -translate-x-1/2 object-contain md:block lg:h-64 lg:w-64 3xl:left-[651px] 3xl:top-[127px] 3xl:h-[379px] 3xl:w-[379px] 3xl:translate-x-0"
+            className="3xl:left-[651px] absolute top-[60px] top-[280px] left-1/2 z-10 h-[200px] w-[200px] -translate-x-1/2 object-contain sm:top-[280px] sm:h-[250px] sm:w-[250px] md:top-[350px] md:h-[300px] md:w-[300px] lg:top-[77px] lg:left-[301px] lg:translate-x-0 xl:left-[381px] xl:h-[379px] xl:w-[379px] 2xl:left-[501px]"
           />
 
           {/* Topic */}
-          <div className="text-center align-middle font-['Good_Pawoo'] text-5xl font-normal uppercase leading-[210%] tracking-[0%] text-[#000573] sm:text-6xl md:text-7xl lg:text-8xl 3xl:-mt-[70px] 3xl:text-[120px]">
+          <div className="mt-[180px] text-center align-middle font-['Good_Pawoo'] text-[48px] leading-[210%] font-normal tracking-[0%] text-[#000573] uppercase sm:mt-[200px] sm:text-[64px] md:mt-[220px] md:text-[80px] lg:-mt-[70px] lg:text-[100px] xl:text-[120px]">
             Features
           </div>
           {/* Features card */}
-          <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:gap-12 lg:gap-16 3xl:-mt-[30px] 3xl:gap-x-[506px] 3xl:gap-y-[80px]">
+          <div className="3xl:gap-x-[506px] 3xl:gap-y-[80px] 3xl:ml-[0px] lg:mt-[0px mt-8 mt-60 grid grid-cols-1 gap-6 sm:mt-60 sm:grid-cols-2 sm:gap-8 md:mt-[300px] md:gap-12 lg:-mt-[30px] lg:gap-x-[300px] lg:gap-y-[60px] xl:gap-x-[400px] xl:gap-y-[70px] 2xl:ml-[100px] 2xl:gap-x-[300px] 2xl:gap-y-[75px]">
             <FeatureCard
               title="Paw-wered DeFi"
               description="Stake, swap, and earn with ease"
