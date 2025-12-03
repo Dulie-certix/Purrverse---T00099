@@ -76,7 +76,7 @@ export default function Hero() {
 
         {/* cloud set */}
         <div className="justify-left 3xl:h-[375px] 3xl:max-w-[1252px] z-[-10] mt-[-520px] h-[100px] w-full max-w-[650px] sm:h-[250px] sm:max-w-[800px] md:h-[250px] md:max-w-[750px] lg:mx-auto lg:mt-[-575px] lg:h-[320px] lg:max-w-[1050px] xl:mt-[-610px] xl:h-[350px] xl:max-w-[1150px]">
-          <Cloud className="3xl:mt-[700px] 3xl:ml-[370px] 3xl:h-[340px] 3xl:w-[555px] mt-[570px] ml-[20px] h-[100px] w-[150px] sm:mt-[550px] sm:ml-[150px] sm:h-[220px] sm:w-[280px] md:mt-[585px] md:ml-[180px] md:h-[230px] md:w-[300px] lg:mt-[600px] lg:ml-[220px] lg:h-[300px] lg:w-[420px] xl:mt-[650px] xl:ml-[280px] xl:h-[320px] xl:w-[480px]" />
+          <Cloud className="3xl:mt-[680px] 3xl:ml-[370px] 3xl:h-[340px] 3xl:w-[555px] mt-[570px] ml-[20px] h-[100px] w-[150px] sm:mt-[550px] sm:ml-[150px] sm:h-[220px] sm:w-[280px] md:mt-[585px] md:ml-[180px] md:h-[230px] md:w-[300px] lg:mt-[600px] lg:ml-[220px] lg:h-[300px] lg:w-[420px] xl:mt-[650px] xl:ml-[280px] xl:h-[320px] xl:w-[480px]" />
           <Cloud className="3xl:mt-[-375px] 3xl:h-[340px] 3xl:w-[555px] mt-[-100px] ml-[120px] h-[100px] w-[150px] sm:mt-[-200px] sm:ml-[0px] sm:h-[220px] sm:w-[280px] md:mt-[-250px] md:h-[230px] md:w-[300px] lg:mt-[-320px] lg:h-[300px] lg:w-[420px] xl:mt-[-350px] xl:h-[320px] xl:w-[480px]" />
           <Cloud className="3xl:mt-[-300px] 3xl:ml-[700px] 3xl:h-[340px] 3xl:w-[555px] mt-[-100px] ml-[180px] h-[100px] w-[120px] sm:mt-[-200px] sm:ml-[300px] sm:h-[220px] sm:w-[280px] md:mt-[-210px] md:ml-[400px] md:h-[230px] md:w-[300px] lg:mt-[-270px] lg:ml-[480px] lg:h-[300px] lg:w-[420px] xl:mt-[-270px] xl:ml-[580px] xl:h-[320px] xl:w-[480px]" />
         </div>

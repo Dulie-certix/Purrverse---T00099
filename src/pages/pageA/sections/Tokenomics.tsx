@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="Section2"
-      className="relative flex min-h-screen w-full items-center justify-center py-12 sm:py-16 lg:-mt-8 lg:py-20 3xl:-mt-[68px]"
+      className="3xl:-mt-[68px] relative flex w-full justify-center py-12 lg:-mt-8 lg:py-20"
     >
       {/* background */}
       <TopFadeMask position="bottom">
@@ -17,34 +17,34 @@ export default function Hero() {
         />
       </TopFadeMask>
 
-      <div className="relative z-20 w-full max-w-7xl px-4 sm:px-6 lg:px-8 3xl:max-w-[1920px]">
-        <div className="relative mx-auto w-full max-w-6xl 3xl:max-w-[1748px]">
+      <div className="3xl:max-w-[1920px] relative z-20 h-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="3xl:max-w-[1748px] relative mx-auto h-auto w-full max-w-6xl">
           <img
             src={PlaneCat}
             alt="Plane Cat"
-            className="absolute left-1/2 top-0 hidden h-32 w-28 -translate-x-1/2 md:block lg:h-48 lg:w-40 3xl:left-[829.9px] 3xl:top-0 3xl:h-[284px] 3xl:w-[260.5px] 3xl:translate-x-0"
+            className="3xl:left-[829.9px] 3xl:top-[120px] 3xl:h-[284px] 3xl:w-[260.5px] 3xl:translate-x-0 absolute top-0 left-1/2 mt-[150px] h-32 h-58 w-28 w-50 -translate-x-1/2 lg:mt-[0px]"
           />
 
-          <h1 className="mb-12 text-center align-middle font-['Good_Pawoo'] text-5xl font-normal uppercase leading-[210%] tracking-[0%] text-white sm:text-6xl md:text-7xl lg:mb-16 lg:text-8xl 3xl:absolute 3xl:left-[632px] 3xl:top-[506px] 3xl:mb-0 3xl:text-[120px]">
+          <h1 className="3xl:pt-[0px] 3xl:absolute 3xl:left-[632px] 3xl:top-[506px] 3xl:mb-0 3xl:text-[120px] mt-[-50px] mb-12 text-center align-middle font-['Good_Pawoo'] text-5xl leading-[210%] font-normal tracking-[0%] text-white uppercase sm:text-6xl md:text-7xl lg:mt-[0px] lg:mb-16 lg:pt-[200px] lg:text-8xl xl:pt-[250px] 2xl:top-[0px]">
             Tokenomics
           </h1>
-          
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3 3xl:block">
+
+          <div className="3xl:h-[1080px] 2xl:h-[200px] relative h-[950px] sm:mt-[-130px] sm:h-[800px] md:h-[700px] lg:mt-[-500px] lg:h-[800px] xl:mt-[-650px] 2xl:mt-[0px]">
             <Stone
-              className="3xl:absolute 3xl:left-[119.79px] 3xl:top-[527px]"
-              textMargin="mx-[52.21px]"
+              className="3xl:left-[119.79px] 3xl:top-[527px] absolute top-[300px] left-[50px] sm:top-[350px] sm:left-[0px] md:top-[300px] md:left-[0px] lg:top-[380px] lg:left-[0px] xl:top-[350px] xl:left-[-30px] 2xl:top-[-253px] 2xl:left-[-100px]"
+              textMargin="mx-[30px] sm:mx-[20px] 3xl:mx-[52.21px]"
               title="Total Supply"
               subtitle="1,000,000,000 PURR"
             />
             <Stone
-              className="3xl:absolute 3xl:left-[769.79px] 3xl:top-[655px]"
-              textMargin="mx-[62.21px]"
+              className="3xl:left-[769.79px] 3xl:top-[655px] absolute top-[550px] left-[50px] sm:top-[550px] sm:left-[200px] md:top-[400px] md:left-[250px] lg:top-[500px] lg:left-[300px] xl:top-[520px] xl:left-[450px] 2xl:top-[-130px] 2xl:left-[450px]"
+              textMargin="mx-[40px] sm:mx-[50px] 3xl:mx-[62.21px]"
               title="Community Rewards"
               subtitle="40% "
             />
             <Stone
-              className="sm:col-span-2 lg:col-span-1 3xl:absolute 3xl:left-[1381px] 3xl:top-[336px]"
-              rotation="3xl:rotate-[58.65deg]"
+              className="3xl:left-[1381px] 3xl:top-[336px] absolute top-[800px] right-[50px] sm:top-[350px] sm:right-[0px] md:top-[200px] md:right-[-10px] lg:top-[380px] lg:right-[0px] xl:top-[280px] xl:right-[-30px] 2xl:top-[-300px] 2xl:right-[-100px]"
+              rotation="rotate-[58.65deg]"
               title="Liquidity"
               subtitle="20%"
             />

@@ -29,7 +29,7 @@ export default function Section1() {
           <img
             src={NASACatImage}
             alt="NASA Cat"
-            className="3xl:w-[285px] mt-20 ml-4 h-auto w-32 sm:mt-24 sm:ml-8 sm:w-40 md:mt-32 md:ml-12 md:w-48 lg:ml-20 lg:w-56 2xl:mt-[194px] 2xl:ml-[202px]"
+            className="3xl:w-[285px] mt-20 ml-4 h-auto w-32 sm:mt-24 sm:ml-8 sm:w-40 md:mt-32 md:ml-12 md:w-48 lg:ml-20 lg:w-56 2xl:mt-[194px] 2xl:ml-[202px] 3xl:mt-[250px]"
           />
 
           <div className="-mt-16 mb-6 flex items-center justify-center text-center font-['Good_Pawoo'] text-5xl leading-[210%] font-normal tracking-normal text-white uppercase sm:-mt-20 sm:text-6xl md:-mt-32 md:mb-8 md:text-7xl lg:text-8xl 2xl:-mt-[185px] 2xl:mb-[40px] 2xl:text-[120px]">
