@@ -16,8 +16,8 @@ function App() {
           <Section1 />
           <Section2 />
           <Section3 />
-          {/* <About />
-          <Section5 />
+          <About />
+          {/* <Section5 />
           <Nav /> */}
         </div>
       </div>

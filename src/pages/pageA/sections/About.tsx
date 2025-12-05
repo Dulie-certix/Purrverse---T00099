@@ -36,7 +36,7 @@ export default function Section4() {
       <img
         src={JetCat}
         alt="Jet Cat"
-        className="absolute bottom-0 right-4 z-10 hidden h-48 w-36 lg:block xl:h-64 xl:w-48 3xl:bottom-[-436px] 3xl:right-[262px] 3xl:h-[364px] 3xl:w-[263px]"
+        className="absolute bottom-0 right-4 z-10  h-48 w-36 xl:h-64 xl:w-48 3xl:bottom-[-436px] 3xl:right-[262px] 3xl:h-[364px] 3xl:w-[263px]"
       />
     </section>
   );

@@ -36,7 +36,7 @@ export default function Section1() {
             Roadmap
           </div>
 
-          <div className="xl:flex-warp 3xl:gap-[45px] mt-0 flex w-full flex-col justify-center gap-6 sm:gap-8 sm:px-[100px] md:grid md:gap-8 lg:grid-cols-2 lg:gap-20 2xl:-mt-[54px] 2xl:flex 2xl:h-[526px] 2xl:flex-row 2xl:gap-[25px] md:px-[0px] sm:px-[150px] px-[20px]">
+          <div className="xl:flex-warp 3xl:gap-[45px] mt-0 flex w-full flex-col items-center justify-center gap-6 sm:gap-8 sm:px-[100px] md:grid md:gap-8 lg:grid-cols-2 lg:gap-20 2xl:-mt-[54px] 2xl:flex 2xl:h-[526px] 2xl:flex-row 2xl:gap-[25px] md:px-[0px] sm:px-[150px] px-[20px]">
             {/* Phases */}
             <Phase
               text="Phase"
