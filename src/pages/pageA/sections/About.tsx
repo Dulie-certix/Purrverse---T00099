@@ -4,25 +4,25 @@ export default function Section4() {
   return (
     <section
       id="About"
-      className="relative flex min-h-screen w-full items-center justify-center py-12 sm:py-16 lg:py-20"
+      className="relative flex h-auto w-full items-center justify-center py-12 sm:py-16 lg:py-20"
     >
       {/* Background*/}
-      <div className="relative flex w-full max-w-7xl flex-col justify-center px-4 sm:px-6 lg:px-8 3xl:max-w-[1920px]">
+      <div className="3xl:max-w-[1920px] relative flex w-full max-w-7xl flex-col justify-center px-4 sm:px-6 lg:px-8">
         <div className="overflow-hidden">
-          <Cloud className="absolute right-0 top-0 hidden h-48 w-80 opacity-50 lg:block xl:h-64 xl:w-96 3xl:right-[480px] 3xl:h-[340px] 3xl:w-[555px]" />
-          <Cloud className="absolute left-0 top-[200px] z-1 hidden h-40 w-64 opacity-50 md:block xl:h-56 xl:w-80 3xl:left-[-50px] 3xl:top-[423px] 3xl:h-[325px] 3xl:w-[447px]" />
-          <Cloud className="absolute left-1/3 top-[400px] z-10 hidden h-32 w-52 opacity-50 lg:block 3xl:left-[659.9px] 3xl:top-[659px] 3xl:h-[198px] 3xl:w-[323.2px]" />
+          <Cloud className="3xl:right-[-80px] 3xl:h-[340px] 3xl:w-[555px] 3xl:mt-[-100px] absolute top-0 right-0 mt-[180px] hidden h-48 w-80 opacity-50 md:block lg:opacity-100 xl:right-[-180px] xl:mt-[-200px] xl:h-64 xl:w-96 2xl:mt-[0px]" />
+          <Cloud className="3xl:left-[-50px] 3xl:top-[300px] 3xl:h-[325px] 3xl:w-[447px] absolute -left-40 z-1 hidden h-40 w-64 opacity-100 md:top-[300px] md:block xl:mt-[-200px] xl:h-56 xl:w-80 2xl:mt-[0px]" />
+          <Cloud className="3xl:left-[659.9px] 3xl:top-[609px] 3xl:h-[198px] 3xl:w-[323.2px] absolute md:top-[400px] left-1/3 z-10 hidden h-32 w-52 sm:block xl:mt-[-200px] 2xl:mt-[0px] top-[500px]" />
         </div>
 
         {/* About */}
-        <div className="relative z-20 mx-auto max-w-4xl 3xl:max-w-[1032px]">
+        <div className="3xl:max-w-[1032px] 3xl:mt-[0px] relative z-20 mx-auto max-w-4xl sm:mt-[250px] md:mt-[100px] lg:-mt-[100px] xl:mt-[0px] 2xl:mt-[150px]">
           {/* Topic */}
-          <h2 className="text-center font-['Good_Pawoo'] text-5xl font-normal uppercase leading-[210%] tracking-[0%] text-[#000573] sm:text-6xl md:text-7xl lg:text-8xl 3xl:text-[120px]">
+          <h2 className="3xl:text-[120px] text-center font-['Good_Pawoo'] text-5xl leading-[210%] font-normal tracking-[0%] text-[#000573] uppercase sm:text-6xl md:text-7xl lg:text-8xl">
             About
           </h2>
 
           {/* text */}
-          <p className="-mt-12 text-center align-middle font-['Fredoka'] text-base font-semibold leading-relaxed tracking-[0%] text-[#1D1F2F] sm:text-lg md:text-xl lg:-mt-16 3xl:-mt-[100px] 3xl:text-[24px] 3xl:leading-[48px]">
+          <p className="3xl:-mt-[100px] 3xl:text-[24px] 3xl:leading-[48px] -mt-12 text-center align-middle font-['Fredoka'] text-base leading-relaxed font-semibold tracking-[0%] text-[#1D1F2F] sm:text-lg md:text-xl lg:-mt-16">
             Purrverse is a playful yet powerful Web3 ecosystem led by a
             community of curious cats and crypto lovers. We blend adorable
             design with serious blockchain utility—staking, swapping, and
@@ -36,7 +36,7 @@ export default function Section4() {
       <img
         src={JetCat}
         alt="Jet Cat"
-        className="absolute bottom-0 right-4 z-10  h-48 w-36 xl:h-64 xl:w-48 3xl:bottom-[-436px] 3xl:right-[262px] 3xl:h-[364px] 3xl:w-[263px]"
+        className="3xl:right-[0px] 3xl:h-[364px] 3xl:w-[263px] 3xl:-bottom-110 absolute right-4 -bottom-90 z-10 h-48 w-36 xl:bottom-[-220px] xl:h-64 xl:w-48 lg:block hidden"
       />
     </section>
   );

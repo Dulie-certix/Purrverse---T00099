@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section
       id="Hero"
-      className="relative flex h-screen w-screen items-center justify-center overflow-hidden"
+      className="relative flex h-auto w-screen items-center justify-center overflow-hidden"
     >
       <TopFadeMask position="bottom" className="w-screen">
         <video
