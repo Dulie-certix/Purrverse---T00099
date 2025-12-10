@@ -10,39 +10,23 @@ export default function Section4() {
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
       document.documentElement.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
       document.documentElement.style.overflow = '';
     }
     return () => {
       document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
       document.documentElement.style.overflow = '';
     };
   }, [isMenuOpen]);
 
-  const handleNavClick = (link: string) => {
-    // First restore scroll
+  const handleNavClick = () => {
+    // Restore scroll and close menu
     document.body.style.overflow = '';
     document.body.style.position = '';
     document.body.style.width = '';
     document.documentElement.style.overflow = '';
-    
-    // Then navigate
-    setTimeout(() => {
-      const element = document.querySelector(link);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
-    
-    // Close menu
     setIsMenuOpen(false);
   };
 
@@ -90,19 +74,19 @@ export default function Section4() {
           {isMenuOpen && (
             <div className="absolute bottom-full left-0 flex w-full items-center justify-center bg-[#00000099] backdrop-blur-lg lg:hidden">
               <div className="flex flex-col gap-4 p-4 text-center">
-                <div onClick={() => handleNavClick('#Section5')}>
+                <div onClick={handleNavClick}>
                   <NavTag link="#Section5" text="Home" />
                 </div>
-                <div onClick={() => handleNavClick('#About')}>
+                <div onClick={handleNavClick}>
                   <NavTag link="#About" text="about Us" />
                 </div>
-                <div onClick={() => handleNavClick('#Section3')}>
+                <div onClick={handleNavClick}>
                   <NavTag link="#Section3" text="Key features" />
                 </div>
-                <div onClick={() => handleNavClick('#Section2')}>
+                <div onClick={handleNavClick}>
                   <NavTag link="#Section2" text="tokenomics" />
                 </div>
-                <div onClick={() => handleNavClick('#Section1')}>
+                <div onClick={handleNavClick}>
                   <NavTag link="#Section1" text="Roadmap" />
                 </div>
 
