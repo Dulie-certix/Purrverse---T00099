@@ -10,7 +10,7 @@ export default function NavTag({ link = '', text = '' }: NavProps) {
     const targetId = link.replace('#', '');
     const element = document.getElementById(targetId);
     if (element) {
-      const offsetTop = element.offsetTop + 160;
+      const offsetTop = element.offsetTop + 100;
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth'
