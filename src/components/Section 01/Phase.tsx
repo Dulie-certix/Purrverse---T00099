@@ -12,7 +12,7 @@ interface Props {
 
 const Phase: React.FC<Props> = ({ text1, text, contentText, listItems, imageSrc, imageWidth }) => {
   return (
-    <div className=" rounded-3xl bg-[#FFFFFF33] p-5 shadow-[0px_0px_16px_4px_#FFFFFF40_inset] w-[280px] sm:w-[360px] md:w-[360px] lg:w-[370px] 2xl:w-[336px] 3xl:h-[526px] 2xl:h-auto 3xl:w-[386px]">
+    <div className="rounded-3xl bg-[#FFFFFF33] p-5 shadow-[0px_0px_16px_4px_#FFFFFF40_inset] w-[280px] sm:w-[360px] md:w-[360px] lg:w-[370px] 2xl:w-[336px] 3xl:h-[526px] 2xl:h-auto 3xl:w-[386px] transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_24px_6px_#FFFFFF60_inset]">
       <div className="w-full flex flex-col gap-5">
 
         {/* Topic  */}
@@ -49,7 +49,7 @@ const Phase: React.FC<Props> = ({ text1, text, contentText, listItems, imageSrc,
           <img 
             src={imageSrc} 
             alt="Phase image" 
-            className={`h-auto ${imageWidth}`}
+            className={`h-auto ${imageWidth} animate-float`}
           />
         </div>
     </div>

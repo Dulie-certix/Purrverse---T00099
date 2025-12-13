@@ -274,6 +274,15 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@keyframes spin-y {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
