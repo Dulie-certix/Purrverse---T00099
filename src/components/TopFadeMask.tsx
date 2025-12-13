@@ -4,19 +4,30 @@ import React from "react";
 interface MaskProps {
   children?: React.ReactNode;
   className?: string;
-  position?: "top" | "bottom";
+  position?: 'top' | 'bottom';
+  fadeIntensity?: number;
+  bgColor?: string;
 }
 
-const TopFadeMask: React.FC<MaskProps> = ({ children, className = "", position = "top" }) => {
-  const isBottom = position === "bottom";
-  const positionClass = isBottom ? "bottom-0" : "top-0";
-  const maskClass = isBottom 
-    ? "[mask-image:linear-gradient(to_top,transparent_0%,black_260px,black_100%)] [webkit-mask-image:linear-gradient(to_top,transparent_0%,black_260px,black_100%)]"
-    : "[mask-image:linear-gradient(to_bottom,transparent_0%,black_260px,black_100%)] [webkit-mask-image:linear-gradient(to_bottom,transparent_0%,black_260px,black_100%)]";
+const TopFadeMask: React.FC<MaskProps> = ({
+  children,
+  className = '',
+  position = 'top',
+  fadeIntensity = 20,
+  bgColor = 'transparent',
+}) => {
+  const isBottom = position === 'bottom';
+  const direction = isBottom ? 'to top' : 'to bottom';
+  
+  const maskStyle = {
+    maskImage: `linear-gradient(${direction}, ${bgColor} 0%, black ${fadeIntensity}%, black 100%)`,
+    WebkitMaskImage: `linear-gradient(${direction}, ${bgColor} 0%, black ${fadeIntensity}%, black 100%)`,
+  };
 
   return (
     <div
-      className={`absolute ${positionClass} left-0 w-full h-full object-cover z-0 ${maskClass} ${className}`}
+      className={`absolute inset-0 h-full w-full ${className}`}
+      style={maskStyle}
     >
       {children}
     </div>
