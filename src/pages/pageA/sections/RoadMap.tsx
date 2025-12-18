@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Section1BG from '../../../assets/Section 01/Section 01 BG.gif';
 import CatImage from '../../../assets/Section 01/cat.png';
 import SchoolCatImage from '../../../assets/Section 01/School Cat.png';
@@ -11,7 +12,7 @@ export default function Section1() {
   return (
     <section
       id="Section1"
-      className="3xl:-mt-[260px] relative -mt-20 flex h-full items-center justify-center overflow-hidden md:-mt-40"
+      className="3xl:-mt-[260px] relative z-10 -mt-20 flex h-full items-center justify-center overflow-visible md:-mt-40"
     >
       {/* BackGround */}
       <TopFadeMask position="top">
@@ -29,10 +30,20 @@ export default function Section1() {
         <div className="3xl:px-[0px] 3xl:mb-[68px] 3xl:h-[1080px] mx-4 mb-10 w-full max-w-[1680px] md:mb-12 md:px-[0px] lg:px-[100px] xl:px-[200px] 2xl:px-[60px]">
           {/* NASA Cat */}
           <AnimatedElement animation="fade-right" duration={800}>
-            <img
+            <motion.img
               src={NASACatImage}
               alt="NASA Cat"
-              className="3xl:w-[285px] mt-10 ml-4 h-auto w-32 sm:mt-24 sm:ml-8 sm:w-40 md:mt-32 md:ml-12 md:w-48 lg:ml-20 lg:w-56 2xl:mt-[194px] 2xl:ml-[202px] 3xl:mt-[250px] animate-float"
+              className="3xl:w-[285px] 3xl:mt-[250px] mt-10 ml-4 h-auto w-32 sm:mt-24 sm:ml-8 sm:w-40 md:mt-32 md:ml-12 md:w-48 lg:ml-20 lg:w-56 2xl:mt-[194px] 2xl:ml-[202px]"
+              animate={{
+                y: [50, -20, 50],
+                x: [-300, 90, -300],
+                rotate: [0, 20, 0, -20, 0],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              }}
             />
           </AnimatedElement>
 
@@ -42,7 +53,7 @@ export default function Section1() {
             </div>
           </AnimatedElement>
 
-          <div className="xl:flex-warp 3xl:gap-[45px] mt-0 flex w-full flex-col items-center justify-center gap-6 sm:gap-8 sm:px-[100px] md:grid md:gap-8 lg:grid-cols-2 lg:gap-20 2xl:-mt-[54px] 2xl:flex 2xl:h-[526px] 2xl:flex-row 2xl:gap-[25px] md:px-[0px] sm:px-[150px] px-[20px]">
+          <div className="xl:flex-warp 3xl:gap-[45px] mt-0 flex w-full flex-col items-center justify-center gap-6 px-[20px] sm:gap-8 sm:px-[100px] sm:px-[150px] md:grid md:gap-8 md:px-[0px] lg:grid-cols-2 lg:gap-20 2xl:-mt-[54px] 2xl:flex 2xl:h-[526px] 2xl:flex-row 2xl:gap-[25px]">
             {/* Phases */}
             <AnimatedElement animation="zoom-in" delay={0} duration={700}>
               <Phase
@@ -58,6 +69,7 @@ export default function Section1() {
                 ]}
                 imageSrc={CatImage}
                 imageWidth="w-[150px]"
+                isInRoadmap={true}
               />
             </AnimatedElement>
             <AnimatedElement animation="zoom-in" delay={150} duration={700}>
@@ -74,6 +86,7 @@ export default function Section1() {
                 ]}
                 imageSrc={SchoolCatImage}
                 imageWidth="w-[79px]"
+                isInRoadmap={true}
               />
             </AnimatedElement>
             <AnimatedElement animation="zoom-in" delay={300} duration={700}>
@@ -90,6 +103,7 @@ export default function Section1() {
                 ]}
                 imageSrc={RoboCatImage}
                 imageWidth="w-[150px]"
+                isInRoadmap={true}
               />
             </AnimatedElement>
             <AnimatedElement animation="zoom-in" delay={450} duration={700}>
@@ -106,6 +120,7 @@ export default function Section1() {
                 ]}
                 imageSrc={BlackCatImage}
                 imageWidth="w-[150px]"
+                isInRoadmap={true}
               />
             </AnimatedElement>
           </div>

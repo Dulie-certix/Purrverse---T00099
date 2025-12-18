@@ -1,6 +1,7 @@
 import Cloud from '../../../components/Cloud';
 import FeatureCard from '../../../components/Section 03/FeatureCard';
 import ShieldCat from '../../../assets/Section 03/shield Cat.png';
+import { motion } from 'framer-motion';
 
 export default function Section3() {
   return (
@@ -31,10 +32,19 @@ export default function Section3() {
         {/* Content */}
         <div className="relative z-20 w-full max-w-[1684px]">
           {/* Image */}
-          <img
+          <motion.img
             src={ShieldCat}
             alt="Shield Cat"
-            className="3xl:left-[651px] animate-scale-in animate-float absolute top-[60px] top-[280px] left-1/2 z-10 h-[200px] w-[200px] -translate-x-1/2 object-contain sm:top-[280px] sm:h-[250px] sm:w-[250px] md:top-[350px] md:h-[300px] md:w-[300px] lg:top-[77px] lg:left-[301px] lg:translate-x-0 xl:left-[381px] xl:h-[379px] xl:w-[379px] 2xl:left-[501px]"
+            className="3xl:left-[651px] absolute top-[60px] top-[280px] left-1/2 z-10 h-[200px] w-[200px] -translate-x-1/2 object-contain sm:top-[280px] sm:h-[250px] sm:w-[250px] md:top-[350px] md:h-[300px] md:w-[300px] lg:top-[77px] lg:left-[301px] lg:translate-x-0 xl:left-[381px] xl:h-[379px] xl:w-[379px] 2xl:left-[501px]"
+            animate={{
+              y: [0, -20, 0],
+              x: [0, 10, 0, -10, 0]
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
           />
 
           {/* Topic */}

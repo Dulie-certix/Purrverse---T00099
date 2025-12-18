@@ -3,6 +3,7 @@ import SignUp from '../../../assets/Nav Bar/BTN Sign Up.png';
 import NavTag from '../../../components/Nav Bar/NavTag';
 import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Section4() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,10 +40,12 @@ export default function Section4() {
       {/* Background*/}
       <div className="3xl:max-w-[1920px] 3xl:px-[120px] flex h-full w-full max-w-7xl items-center justify-between px-4 py-1 sm:px-6 md:py-2 lg:px-8 lg:py-4">
         <div className="flex items-center">
-          <img
+          <motion.img
+            whileHover={{ rotate: [0, -15, 15, -15, 0], scale: 1.1 }}
+            transition={{ duration: 0.5 }}
             src={CatFace}
             alt="Cat Face"
-            className="3xl:h-[62px] 3xl:w-[72px] h-10 w-12 sm:h-12 sm:w-14"
+            className="3xl:h-[62px] 3xl:w-[72px] h-10 w-12 cursor-pointer sm:h-12 sm:w-14"
           />
           <h2 className="3xl:text-[40px] bg-gradient-to-b from-[#DD9395] to-[#A7606E] bg-clip-text font-['Good_Pawoo'] text-2xl leading-[210%] font-normal tracking-[0%] text-transparent uppercase [-webkit-text-stroke:1px_#000000] sm:text-3xl">
             Purrverse
@@ -90,19 +93,37 @@ export default function Section4() {
                   <NavTag link="#Section1" text="Roadmap" />
                 </div>
 
-                <img
+                <motion.img
+                  whileHover={{ scale: 1.1, rotate: [0, -3, 3, 0] }}
+                  whileTap={{ scale: 0.95 }}
                   src={SignUp}
                   alt="Sing Up Button"
-                  className="h-14 w-28 sm:h-16 sm:w-32"
+                  className="h-14 w-28 cursor-pointer sm:h-16 sm:w-32"
                 />
               </div>
             </div>
           )}
         </div>
-        <img
+        <motion.img
+          whileHover={{ 
+            scale: 1.1, 
+            rotate: [0, -3, 3, -3, 0],
+            filter: "brightness(1.2) drop-shadow(0 0 15px rgba(221, 147, 149, 0.8))"
+          }}
+          whileTap={{ scale: 0.95 }}
+          animate={{
+            filter: [
+              "drop-shadow(0 0 5px rgba(221, 147, 149, 0.4))",
+              "drop-shadow(0 0 10px rgba(221, 147, 149, 0.6))",
+              "drop-shadow(0 0 5px rgba(221, 147, 149, 0.4))"
+            ]
+          }}
+          transition={{
+            filter: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+          }}
           src={SignUp}
           alt="Sing Up Button"
-          className="3xl:h-[85px] 3xl:w-[165px] hidden h-14 w-28 sm:h-16 sm:w-32 lg:block"
+          className="3xl:h-[85px] 3xl:w-[165px] hidden h-14 w-28 cursor-pointer sm:h-16 sm:w-32 lg:block"
         />
       </div>
     </section>

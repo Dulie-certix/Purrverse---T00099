@@ -2,8 +2,14 @@ import Section2BG from '../../../assets/Section 02/Section 02 BG.gif';
 import PlaneCat from '../../../assets/Section 02/plane cat.png';
 import Stone from '../../../components/Section 02/Stone';
 import TopFadeMask from '../../../components/TopFadeMask';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform, useInView } from 'framer-motion';
+import { useRef } from 'react';
 export default function Hero() {
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 0.3], [400, 0]);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.3 });
+  
   return (
     <section
       id="Section2"
@@ -22,14 +28,25 @@ export default function Hero() {
         </TopFadeMask>
       </div>
 
-      <div className="3xl:max-w-[1920px] relative z-20 h-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="3xl:max-w-[1920px] relative z-0 h-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="3xl:max-w-[1748px] relative mx-auto h-auto w-full max-w-6xl">
           <motion.img
+            ref={ref}
             src={PlaneCat}
             alt="Plane Cat"
             className="3xl:left-[829.9px] 3xl:top-[120px] 3xl:h-[284px] 3xl:w-[260.5px] 3xl:translate-x-0 absolute top-0 left-1/2 mt-[150px] h-32 h-58 w-28 w-50 -translate-x-1/2 lg:mt-[0px]"
-            animate={{ y: [0, -30, 0] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            initial={{ opacity: 0, x: 200 }}
+            animate={{ 
+              opacity: isInView ? 1 : 0,
+              x: isInView ? 0 : 300,
+              y: isInView ? [0, -30, 0] : 0
+            }}
+            style={{ x }}
+            transition={{ 
+              opacity: { duration: 1, ease: "easeOut" },
+              x: { duration: 1, ease: "easeOut" },
+              y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }
+            }}
           />
 
           <h1 className="3xl:pt-[0px] 3xl:absolute 3xl:left-[632px] 3xl:top-[506px] 3xl:mb-0 3xl:text-[120px] mt-[-50px] mb-12 text-center align-middle font-['Good_Pawoo'] text-5xl leading-[210%] font-normal tracking-[0%] text-white uppercase sm:text-6xl md:text-7xl lg:mt-[0px] lg:mb-16 lg:pt-[200px] lg:text-8xl xl:pt-[250px] 2xl:top-[0px]">
